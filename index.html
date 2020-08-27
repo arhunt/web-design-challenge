@@ -3,34 +3,48 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Tab Title Goes Here</title>
-  <!-- Stylesheets go here -->
+  <title>Latitude vs. Weather</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 
 <!-- Landing page contains (1) Explanation of the project (2) Links to each visualization page (3) Sidebar containing preview images of each plot; clicking an image should take the user to that visualization. -->
 
 <body>
 
+<!-- wider part of screen, 8/12 -->
 
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-lg-8">
+      <h1>Can a location's latitude predict its weather?</h1>
+      <p>For over 500 locations chosen at random, the day's maximum temperature, humidity, cloudiness and windspeed were collected from the OpenWeatherMap API and loaded into a Pandas DataFrame, then each weather characteristic was plotted against the city's latitude using Matplotlib.</p>
+      <p>The resulting plots and linear regressions were then used to establish whether there is a correlation between the weather conditions at a particular location, and that location's distance from the equator.</p>
+    </div>
+    <div class="col-md-12 col-lg-4">
+      <h2>Visualizations</h2>
+      <a target="_blank" href="tempall.html">
+        <img src="assets/city2maxtemp.png" width="150" alt="Max Temp, All Cities">
+      </a>
+      <a target="_blank" href="humidall.html">
+        <img src="assets/city2humidity.png" width="150" alt="Humidity, All Cities">
+      </a>
+      <a target="_blank" href="cloudall.html">
+        <img src="assets/city2cloudiness.png" width="150" alt="Cloudiness, All Cities">
+      </a>
+      <a target="_blank" href="windall.html">
+        <img src="assets/city2windspeed.png" width="150" alt="Wind Speed, All Cities">
+      </a>
+    </div>
+  </div>
 
+</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- Copied this code from 03.08 Solved -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!-- End of copied code -->
 
 </body>
 
