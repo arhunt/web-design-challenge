@@ -12,14 +12,55 @@
 
 <body>
 
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html"><h3>Latitude vs. Weather</h3></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item"><h6>All Locations</h6></a>
+              <a class="dropdown-item" href="tempall.html">Temperature</a>
+              <a class="dropdown-item" href="humidall.html">Humidity</a>
+              <a class="dropdown-item" href="cloudall.html">Cloudiness</a>
+              <a class="dropdown-item" href="windall.html">Wind Speed</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item"><h6>By Hemisphere</h6></a>
+              <a class="dropdown-item" href="compsnh.html">Northern Hemisphere</a>
+              <a class="dropdown-item" href="compssh.html">Southern Hemisphere</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="compsall.html">Comparisons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </nav>
+  
 <!-- wider part of screen, 8/12 -->
-
 <div class="container">
   <div class="row">
+    <div class="col-md-12">
+    <p></p>  
+    </div>
     <div class="col-md-12 col-lg-8">
       <h1>Can a location's latitude predict its weather?</h1>
       <p>For over 500 locations chosen at random, the day's maximum temperature, humidity, cloudiness and windspeed were collected from the OpenWeatherMap API and loaded into a Pandas DataFrame, then each weather characteristic was plotted against the city's latitude using Matplotlib.</p>
-      <p>The resulting plots and linear regressions were then used to establish whether there is a correlation between the weather conditions at a particular location, and that location's distance from the equator.</p>
+      <p>The resulting plots were then used to establish whether there is a correlation between the weather conditions at a particular location, and that location's distance from the equator.</p>
+      <p>Further plots, isolating the data for the Northern and Southern hemispheres, allowed for an addition of linear regressions to further determine whether a correlation existed.</p>
     </div>
     <div class="col-md-12 col-lg-4">
       <h2>Visualizations</h2>
