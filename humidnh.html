@@ -3,47 +3,38 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Humidity: Northern Hemisphere Cities</title>
+  <title>Humidity: Northern Hemisphere</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
 </head>
 
-<!-- Descriptive title and heading tag -->
-<!-- Visualization for All Cities (and for North/South?) -->
-<!-- Paragraph describing the plot and significance -->
-
-<body>
-
-  <!-- wider part of screen, 8/12 -->
+<body class="wholepage">
   
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <p></p>  
-      </div>
-      <div class="col-md-12 col-lg-8">
-        <h1>Latitude vs. Humidity</h1>
-        <h2>Northern Hemisphere</h2>
-        <img src="assets/north2humidity.png" alt="Humidity, Northern Hemisphere Cities">        
-        <p>Isolating the Northern Hemipshere locations to determine whether there is a correlation between latitude and humidity still does not produce any significant results.</p>
+      <div class="col-md-12 col-lg-7 maincontent">
+        <h2>Latitude vs. Humidity</h2>
+        <h4>Northern Hemisphere</h4>
+        <br><img src="assets/north2humidity.png" alt="Humidity, Northern Hemisphere"><br><br>      
+        <p align="justify">Isolating the Northern Hemipshere locations to determine whether there is a correlation between latitude and humidity still does not produce any significant results.</p>
         <ul>
             <li>The r-squared is 0.007942546643099239</li>
             <li>Line equation: y = 0.09x + 65.5</li>
         </ul>
       </div>
-      <div class="col-md-12 col-lg-4">
-        <h2>Northern Hemisphere</h2>
+      <div class="col-md-12 col-lg-4 offset-lg-1 sidebar">
+        <h3>Northern Hemisphere</h3>
         <a target="_blank" class="sideimage" href="tempnh.html">
-          <img src="assets/north2maxtemp.png" width="150" alt="Max Temp, Northern Hemisphere Cities">
+          <img src="assets/north2maxtemp.png" width="150" alt="Max Temp, Northern Hemisphere">
         </a>
         <a target="_blank" class="sideimage" href="humidnh.html">
-          <img src="assets/north2humidity.png" width="150" alt="Humidity, Northern Hemisphere Cities">
+          <img src="assets/north2humidity.png" width="150" alt="Humidity, Northern Hemisphere">
         </a>
         <a target="_blank" class="sideimage" href="cloudnh.html">
-          <img src="assets/north2cloudiness.png" width="150" alt="Cloudiness, Northern Hemisphere Cities">
+          <img src="assets/north2cloudiness.png" width="150" alt="Cloudiness, Northern Hemisphere">
         </a>
         <a target="_blank" class="sideimage" href="windnh.html">
-          <img src="assets/north2windspeed.png" width="150" alt="Wind Speed, Northern Hemisphere Cities">
+          <img src="assets/north2windspeed.png" width="150" alt="Wind Speed, Northern Hemisphere">
         </a>
       </div>
     </div>

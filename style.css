@@ -1,6 +1,27 @@
 .sideimage {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     line-height: 120px;
+}
+
+.sidebar {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    background-color: white
+}
+
+.maincontent {
+    padding: 25px;
+    background-color: white;
+}
+
+.wholepage{
+    background-color:#f0f0f0
+}
+
+.toprow{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 

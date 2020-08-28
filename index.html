@@ -10,7 +10,7 @@
 
 <!-- Landing page contains (1) Explanation of the project (2) Links to each visualization page (3) Sidebar containing preview images of each plot; clicking an image should take the user to that visualization. -->
 
-<body>
+<body class = "wholepage">
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="index.html"><h3>Latitude vs. Weather</h3></a>
@@ -62,20 +62,21 @@
     </div>
   </nav>
 
-<!-- wider part of screen, 8/12 -->
+<div class="container toprow">
+  <div class="row">
+  </div>
+</div>
+
 <div class="container">
   <div class="row">
-    <div class="col-md-12">
-    <p></p>  
+    <div class="col-md-12 col-lg-7 maincontent">
+      <h2>Can latitude predict weather?</h2>
+      <p align="justify">For over 500 locations chosen at random, the day's maximum temperature, humidity, cloudiness and windspeed were collected from the OpenWeatherMap API and loaded into a Pandas DataFrame, then each weather characteristic was plotted against the city's latitude using Matplotlib.</p>
+      <p align="justify">The resulting plots were then used to establish whether there is a correlation between the weather conditions at a particular location, and that location's distance from the equator.</p>
+      <p align="justify">Further plots, isolating the data for the Northern and Southern hemispheres so as to have all latitude values on only one side of zero, allowed for addition of linear regressions to further determine whether a correlation existed.</p>
     </div>
-    <div class="col-md-12 col-lg-8">
-      <h1>Can a location's latitude predict its weather?</h1>
-      <p>For over 500 locations chosen at random, the day's maximum temperature, humidity, cloudiness and windspeed were collected from the OpenWeatherMap API and loaded into a Pandas DataFrame, then each weather characteristic was plotted against the city's latitude using Matplotlib.</p>
-      <p>The resulting plots were then used to establish whether there is a correlation between the weather conditions at a particular location, and that location's distance from the equator.</p>
-      <p>Further plots, isolating the data for the Northern and Southern hemispheres so as to have all latitude values on only one side of zero, allowed for addition of linear regressions to further determine whether a correlation existed.</p>
-    </div>
-    <div class="col-md-12 col-lg-4">
-      <h2>Visualizations</h2>
+    <div class="col-md-12 col-lg-4 offset-lg-1 sidebar">
+      <h3>Visualizations</h3>
       <a target="_blank" class="sideimage" href="tempall.html">
         <img src="assets/city2maxtemp.png" width="150" alt="Max Temp, All Cities">
       </a>
