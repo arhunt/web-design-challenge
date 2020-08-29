@@ -8,7 +8,7 @@
     padding-top: 25px;
     padding-bottom: 25px;
     text-align: center;
-    background-color: white
+    background-color: white;
 }
 
 .maincontent {
@@ -17,7 +17,7 @@
 }
 
 .wholepage{
-    background-color:#f0f0f0
+    background-color:#f0f0f0;
 }
 
 .toprow{
@@ -25,3 +25,6 @@
     padding-bottom: 20px;
 }
 
+.mainimage{
+    text-align: center;
+}
