@@ -9,6 +9,67 @@
 </head>
 
 <body class="wholepage">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html"><h3>Latitude vs. Weather</h3></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item"><h6>All Locations</h6></a>
+              <a class="dropdown-item" href="tempall.html">Temperature</a>
+              <a class="dropdown-item" href="humidall.html">Humidity</a>
+              <a class="dropdown-item" href="cloudall.html">Cloudiness</a>
+              <a class="dropdown-item" href="windall.html">Wind Speed</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item"><h6>Northern Hemisphere</h6></a>
+              <a class="dropdown-item" href="tempnh.html">Temperature</a>
+              <a class="dropdown-item" href="humidnh.html">Humidity</a>
+              <a class="dropdown-item" href="cloudnh.html">Cloudiness</a>
+              <a class="dropdown-item" href="windnh.html">Wind Speed</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item"><h6>Southern Hemisphere</h6></a>
+              <a class="dropdown-item" href="tempsh.html">Temperature</a>
+              <a class="dropdown-item" href="humidsh.html">Humidity</a>
+              <a class="dropdown-item" href="cloudsh.html">Cloudiness</a>
+              <a class="dropdown-item" href="windsh.html">Wind Speed</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="compsall.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Comparisons
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item"><h6>All Locations</h6></a>
+              <a class="dropdown-item" href="compsall.html">All Locations</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item"><h6>Hemispheres</h6></a>
+              <a class="dropdown-item" href="compsnh.html">Northern</a>
+              <a class="dropdown-item" href="compssh.html">Southern</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </nav>
+
+<div class="container toprow">
+  <div class="row">
+  </div>
+</div>
   
   <div class="container">
     <div class="row">
@@ -17,9 +78,8 @@
         <h4>Southern Hemisphere</h4>
         <div class="mainimage">
         <br><img src="assets/south2maxtemp.png" alt="Max Temp, Southern Hemisphere"></div>
-        <br><p align="justify">The high temperatures taken in the Southern Hemisphere winter have a strong correlation to the latitude of the location, with an r-squared value of approximately 0.64.  Additionally, the slope of the regression line is steeper for this data than it is for the corresponding Northern Hemisphere data.</p>
+        <br><p align="justify">The high temperatures taken in the Southern Hemisphere winter have a strong correlation to the latitude of the location, with an r-squared value of approximately 0.64.  With the line, one can predict with some accuracy that the high temperature at 20 degrees south latitude is around 68 degrees Fahrenheit, and the high temperature at 40 degrees south latitude is around 53 degrees Fahrenheit.</p>
         <p align="justify">One might expect the differences between higher and lower latitudes to be greater during winter than during summer, as the temperatures closer to the equator do not tend to vary as much between seasons; this expectation is confirmed by the steeper slope of the regression line.</p>
-        <p align="justify">With the line, one can predict with some accuracy that the high temperature at 20 degrees south latitude is around 68 degrees Fahrenheit, and the high temperature at 40 degrees south latitude is around 53 degrees Fahrenheit.</p>
         <ul>
             <li>The r-squared is 0.5585115960818674</li>
             <li>Line equation: y = -0.57x + 93.59</li>
@@ -39,10 +99,9 @@
         <a target="_blank" class="sideimage" href="windsh.html">
           <img src="assets/south2windspeed.png" width="150" alt="Wind Speed, Southern Hemisphere">
         </a>
+        </div>
       </div>
     </div>
-  
-  </div>
   
   <!-- Copied this code from 03.08 Solved -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
