@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Maximum Temperature: Southern Hemisphere</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="wholepage">
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-lg-7 maincontent">
+        <h2>Latitude vs. Temperature</h2>
+        <h4>Southern Hemisphere</h4>
+        <div class="mainimage">
+        <br><img src="assets/south2maxtemp.png" alt="Max Temp, Southern Hemisphere"></div>
+        <br><p align="justify">The high temperatures taken in the Southern Hemisphere winter have a strong correlation to the latitude of the location, with an r-squared value of approximately 0.64.  Additionally, the slope of the regression line is steeper for this data than it is for the corresponding Northern Hemisphere data.</p>
+        <p align="justify">One might expect the differences between higher and lower latitudes to be greater during winter than during summer, as the temperatures closer to the equator do not tend to vary as much between seasons; this expectation is confirmed by the steeper slope of the regression line.</p>
+        <p align="justify">With the line, one can predict with some accuracy that the high temperature at 20 degrees south latitude is around 68 degrees Fahrenheit, and the high temperature at 40 degrees south latitude is around 53 degrees Fahrenheit.</p>
+        <ul>
+            <li>The r-squared is 0.5585115960818674</li>
+            <li>Line equation: y = -0.57x + 93.59</li>
+        </ul>
+      </div>
+      <div class="col-md-12 col-lg-4 offset-lg-1 sidebar">
+        <h3>Southern Hemisphere</h3>
+        <a target="_blank" class="sideimage" href="tempsh.html">
+          <img src="assets/south2maxtemp.png" width="150" alt="Max Temp, Southern Hemisphere">
+        </a>
+        <a target="_blank" class="sideimage" href="humidsh.html">
+          <img src="assets/south2humidity.png" width="150" alt="Humidity, Southern Hemisphere">
+        </a>
+        <a target="_blank" class="sideimage" href="cloudsh.html">
+          <img src="assets/south2cloudiness.png" width="150" alt="Cloudiness, Southern Hemisphere">
+        </a>
+        <a target="_blank" class="sideimage" href="windsh.html">
+          <img src="assets/south2windspeed.png" width="150" alt="Wind Speed, Southern Hemisphere">
+        </a>
+      </div>
+    </div>
+  
+  </div>
+  
+  <!-- Copied this code from 03.08 Solved -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!-- End of copied code -->
+  
+  </body>
+
+</html>
