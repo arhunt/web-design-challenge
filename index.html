@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Latitude vs. Weather</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body class = "wholepage">
@@ -27,22 +27,22 @@
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item"><h6>All Locations</h6></a>
-              <a class="dropdown-item" href="tempall.html">Temperature</a>
-              <a class="dropdown-item" href="humidall.html">Humidity</a>
-              <a class="dropdown-item" href="cloudall.html">Cloudiness</a>
-              <a class="dropdown-item" href="windall.html">Wind Speed</a>
+              <a class="dropdown-item" href="visualizations/tempall.html">Temperature</a>
+              <a class="dropdown-item" href="visualizations/humidall.html">Humidity</a>
+              <a class="dropdown-item" href="visualizations/cloudall.html">Cloudiness</a>
+              <a class="dropdown-item" href="visualizations/windall.html">Wind Speed</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item"><h6>Northern Hemisphere</h6></a>
-              <a class="dropdown-item" href="tempnh.html">Temperature</a>
-              <a class="dropdown-item" href="humidnh.html">Humidity</a>
-              <a class="dropdown-item" href="cloudnh.html">Cloudiness</a>
-              <a class="dropdown-item" href="windnh.html">Wind Speed</a>
+              <a class="dropdown-item" href="visualizations/tempnh.html">Temperature</a>
+              <a class="dropdown-item" href="visualizations/humidnh.html">Humidity</a>
+              <a class="dropdown-item" href="visualizations/cloudnh.html">Cloudiness</a>
+              <a class="dropdown-item" href="visualizations/windnh.html">Wind Speed</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item"><h6>Southern Hemisphere</h6></a>
-              <a class="dropdown-item" href="tempsh.html">Temperature</a>
-              <a class="dropdown-item" href="humidsh.html">Humidity</a>
-              <a class="dropdown-item" href="cloudsh.html">Cloudiness</a>
-              <a class="dropdown-item" href="windsh.html">Wind Speed</a>
+              <a class="dropdown-item" href="visualizations/tempsh.html">Temperature</a>
+              <a class="dropdown-item" href="visualizations/humidsh.html">Humidity</a>
+              <a class="dropdown-item" href="visualizations/cloudsh.html">Cloudiness</a>
+              <a class="dropdown-item" href="visualizations/windsh.html">Wind Speed</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -81,30 +81,26 @@
     </div>
     <div class="col-md-12 col-lg-4 offset-lg-1 sidebar">
       <h3>Visualizations</h3>
-      <a target="_blank" class="sideimage" href="tempall.html">
+      <a target="_blank" class="sideimage" href="visualizations/tempall.html">
         <img src="assets/city2maxtemp.png" width="150" alt="Max Temp, All Cities">
       </a>
-      <a target="_blank" class="sideimage" href="humidall.html">
+      <a target="_blank" class="sideimage" href="visualizations/humidall.html">
         <img src="assets/city2humidity.png" width="150" alt="Humidity, All Cities">
       </a>
-      <a target="_blank" class="sideimage" href="cloudall.html">
+      <a target="_blank" class="sideimage" href="visualizations/cloudall.html">
         <img src="assets/city2cloudiness.png" width="150" alt="Cloudiness, All Cities">
       </a>
-      <a target="_blank" class="sideimage" href="windall.html">
+      <a target="_blank" class="sideimage" href="visualizations/windall.html">
         <img src="assets/city2windspeed.png" width="150" alt="Wind Speed, All Cities">
       </a>
     </div>
   </div>
 </div>
 
-<!-- Copied this code from 03.08 Solved -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<!-- End of copied code -->
 
 </body>
 
 </html>
-
-<!-- Navigation menu at the top of each page (1) Name of each site towards the left which allows users to return the landing page from any other (2) Contains a Plots dropdown which provides a link to each visualization page (3) Provides two more text links on the right (a) Comparisons (b) Data (4) Is responsive to media queries (b) small screen is hamburger menu with Plots (list of plots underneath), Comparisons, and Data (c) large screen is bar with menu at right with Plots drop-down, Comparisons, and Data) -->

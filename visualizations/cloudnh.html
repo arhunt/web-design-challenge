@@ -3,15 +3,15 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Wind Speed: All Cities</title>
+  <title>Cloudiness: Northern Hemisphere</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../assets/style.css">
 </head>
 
 <body class="wholepage">
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="index.html"><h3>Latitude vs. Weather</h3></a>
+    <a class="navbar-brand" href="../index.html"><h3>Latitude vs. Weather</h3></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -46,20 +46,20 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="compsall.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="../compsall.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Comparisons
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item"><h6>All Locations</h6></a>
-              <a class="dropdown-item" href="compsall.html">All Locations</a>
+              <a class="dropdown-item" href="../compsall.html">All Locations</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item"><h6>Hemispheres</h6></a>
-              <a class="dropdown-item" href="compsnh.html">Northern</a>
-              <a class="dropdown-item" href="compssh.html">Southern</a>
+              <a class="dropdown-item" href="../compsnh.html">Northern</a>
+              <a class="dropdown-item" href="../compssh.html">Southern</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="data.html">Data</a>
+            <a class="nav-link" href="../data.html">Data</a>
           </li>
         </ul>
       </form>
@@ -70,61 +70,43 @@
   <div class="row">
   </div>
 </div>
-
+  
   <div class="container">
     <div class="row">
       <div class="col-md-12 col-lg-7 maincontent">
-        <h2>Latitude vs. Wind Speed</h2>
+        <h2>Latitude vs. Cloudiness</h2>
+        <h4>Northern Hemisphere</h4>
         <div class="mainimage">
-        <img src="assets/city2windspeed.png" alt="Max Temp, All Cities"></div>        
-        <br><p align="justify">The data collected shows that all latitudes experience low wind speeds (below 20 mph) fairly consistently. Some outliers showing high wind speeds (above 25 mph) were reported from between 20 and 40 and between 60 and 80 degrees north.</p>
+        <br><img src="../assets/north2cloudiness.png" alt="Cloudiness, Northern Hemisphere"></div>
+        <br><p align="justify">Isolating the Northern Hemipshere locations to determine whether there is a correlation between latitude and cloudiness still does not produce any significant results.</p>
+        <ul>
+            <li>The r-squared is 0.0016865465002105168</li>
+            <li>Line equation: y = 0.07x + 48.28</li>
+        </ul>
       </div>
       <div class="col-md-12 col-lg-4 offset-lg-1 sidebar">
-        <h3>Visualizations</h3>
-        <a target="_blank" class="sideimage" href="tempall.html">
-          <img src="assets/city2maxtemp.png" width="150" alt="Max Temp, All Cities">
+        <h3>Northern Hemisphere</h3>
+        <a target="_blank" class="sideimage" href="tempnh.html">
+          <img src="../assets/north2maxtemp.png" width="150" alt="Max Temp, Northern Hemisphere">
         </a>
-        <a target="_blank" class="sideimage" href="humidall.html">
-          <img src="assets/city2humidity.png" width="150" alt="Humidity, All Cities">
+        <a target="_blank" class="sideimage" href="humidnh.html">
+          <img src="../assets/north2humidity.png" width="150" alt="Humidity, Northern Hemisphere">
         </a>
-        <a target="_blank" class="sideimage" href="cloudall.html">
-          <img src="assets/city2cloudiness.png" width="150" alt="Cloudiness, All Cities">
+        <a target="_blank" class="sideactive" href="cloudnh.html">
+          <img src="../assets/north2cloudiness.png" width="150" alt="Cloudiness, Northern Hemisphere">
         </a>
-        <a target="_blank" class="sideactive" href="windall.html">
-          <img src="assets/city2windspeed.png" width="150" alt="Wind Speed, All Cities">
+        <a target="_blank" class="sideimage" href="windnh.html">
+          <img src="../assets/north2windspeed.png" width="150" alt="Wind Speed, Northern Hemisphere">
         </a>
       </div>
     </div>
   
   </div>
   
-  <!-- Copied this code from 03.08 Solved -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <!-- End of copied code -->
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
+  </body>
 
 </html>
